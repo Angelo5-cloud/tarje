@@ -84,6 +84,7 @@ body{
 	
 }
 .opcion {
+	user-select:none;
 	background: black;
 	text-align: center ;
 	margin:auto ;
