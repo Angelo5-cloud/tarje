@@ -1,0 +1,99 @@
+body{
+ background:black;
+ margin: 0;
+ height:100vh;
+ display: flex ;
+ justify-content: center;
+ align-items: center ;
+}
+:root{
+	font-size:16px;
+}
+	/*rem320*/
+/*	35=480*/
+.contenedor{
+	display:flex;
+	justify-content: center;
+	align-items: center ;
+	background:black;
+	height:30rem;
+	width:20rem;
+	border-radius:1rem ;
+	overflow:hidden ;
+	position:relative ;
+}
+.anima{
+	position:absolute;
+	background:white ;
+	height:40rem;
+	width:18rem;
+	border-radius:1rem ;
+	animation-timing-function: linear ;
+	animation-duration: 2s ;
+	animation-name: rota;
+	animation-iteration-count: infinite ;
+	box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff;
+}
+.principal{
+	position: absolute ;
+ background:black;
+	height:29.5rem;
+	width:19.5rem;
+	border-radius:1rem;
+}
+@keyframes rota{
+	0%{transform:rotate(0deg) }
+	100%{transform:rotate(360deg)}
+}
+.cabeza{
+	height :9rem;
+	width: 100%;
+	background: deeppink ;
+	border-radius:1rem;
+	display:flex ;
+	justify-content: center ;
+ align-items: center ;
+}
+.foto1 ,.foto2 ,.foto3{
+	height:7rem;
+	width:7rem;
+	background: purple ;
+	border-radius:50%;
+	position:absolute ;
+	border:3px solid black ;
+	
+}
+.foto1{
+	
+	left:1.5rem;
+	
+}
+
+.foto2{
+	right:1.5rem;
+	
+}
+
+.foto3{
+	background:#fff ;
+	height:8rem;
+	width :8rem;
+	
+}
+.opcion {
+	background: black;
+	text-align: center ;
+	margin:auto ;
+	width: 4rem;
+	outline: 1px solid white;
+	color:white ;
+	
+}
+span{
+	display:none ;
+	border-top:1px solid white;
+}
+
+.opcion:hover span{
+	display:block ;
+}
