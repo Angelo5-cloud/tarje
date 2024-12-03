@@ -1,4 +1,5 @@
 body{
+ position :fixed;
  background:black;
  margin: 0;
  padding:0 ;
